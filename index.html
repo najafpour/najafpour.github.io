@@ -4,146 +4,157 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mehrdad Najafpour</title>
-<style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    max-width: 1200px; /* wider content */
-    margin: 20px auto;
-    padding: 0 15px;
-    line-height: 1.6;
-    color: #111;
-    background-color: #fff;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: nowrap; /* try to keep all tabs in one line */
-    overflow-x: auto;  /* scroll if it overflows */
-    gap: 10px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
-  }
-
-  nav::-webkit-scrollbar {
-    height: 6px;
-  }
-
-  nav::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,0.2);
-    border-radius: 3px;
-  }
-
-  nav a {
-    flex: 0 0 auto; /* prevent shrinking */
-    white-space: nowrap;
-    text-decoration: none;
-    color: #0366d6;
-    cursor: pointer;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 0.95rem;
-  }
-
-  nav a:hover {
-    background-color: #f0f0f0;
-  }
-
-  h1, h2 {
-    font-weight: 500;
-  }
-
-  h3 {
-    margin-top: 25px;
-    font-family: "Georgia", "Times New Roman", serif;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-  }
-
-  section {
-    display: none;
-    margin-bottom: 40px;
-  }
-
-  section.active {
-    display: block;
-  }
-
-  .home {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .home img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-    align-self: center;
-  }
-
-  .card, .white-bg {
-    border-left: 3px solid #0366d6;
-    padding: 12px 16px;
-    margin: 15px 0;
-    background-color: #fff;
-  }
-
-  .pub-list li {
-    margin-bottom: 10px;
-  }
-
-  footer {
-    margin-top: 50px;
-    font-size: 0.9em;
-    color: #555;
-    text-align: center;
-  }
-
-  .home p a {
-    color: #0366d6;
-    text-decoration: none;
-  }
-
-  .home p a:hover {
-    text-decoration: underline;
-  }
-
-  .linkedin, .orcid {
-    display: inline-block;
-    margin-top: 10px;
-  }
-
-  .linkedin img, .orcid img {
-    width: 30px;
-    vertical-align: middle;
-  }
-
-  @media (min-width: 768px) {
-    .home {
-      flex-direction: row;
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 15px;
+      line-height: 1.6;
+      color: #111;
+      background-color: #fff;
     }
-    .home > div {
-      flex: 1;
-    }
-  }
 
-  /* Mobile adjustments */
-  @media (max-width: 767px) {
     nav {
+      display: flex;
       flex-wrap: nowrap;
-      gap: 8px;
+      overflow-x: auto;
+      gap: 10px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
     }
-    nav a {
-      padding: 6px 10px;
-      font-size: 0.85rem;
-    }
-    .home {
-      flex-direction: column;
-    }
-  }
-</style>
 
+    nav::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    nav::-webkit-scrollbar-thumb {
+      background-color: rgba(0,0,0,0.2);
+      border-radius: 3px;
+    }
+
+    nav a {
+      flex: 0 0 auto;
+      white-space: nowrap;
+      text-decoration: none;
+      color: #0366d6;
+      cursor: pointer;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      background-color: #f0f0f0;
+    }
+
+    h1, h2 {
+      font-weight: 500;
+    }
+
+    h3 {
+      margin-top: 25px;
+      font-family: "Georgia", "Times New Roman", serif;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    section {
+      display: none;
+      margin-bottom: 40px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    .home {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .home img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      align-self: center;
+    }
+
+    .card, .white-bg {
+      border-left: 3px solid #0366d6;
+      padding: 12px 16px;
+      margin: 15px 0;
+      background-color: #fff;
+    }
+
+    .pub-list li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #555;
+      text-align: center;
+    }
+
+    .home p a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    .home p a:hover {
+      text-decoration: underline;
+    }
+
+    .linkedin, .orcid {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .linkedin img, .orcid img {
+      width: 30px;
+      vertical-align: middle;
+    }
+
+    /* Desktop layout with image on right aligned with content bottom */
+    @media (min-width: 768px) {
+      .home {
+        flex-direction: row;
+        gap: 30px;
+        align-items: flex-start;
+      }
+      .home > div:first-child {
+        flex: 1;
+      }
+      .home > div:last-child {
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+      .home img {
+        margin-top: 0;
+      }
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 767px) {
+      nav {
+        flex-wrap: nowrap;
+        gap: 8px;
+      }
+      nav a {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+      }
+      .home {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -171,12 +182,12 @@
         <p>Beyond mathematics and AI, I am an amateur reader of history and literature.</p>
         <p>I welcome opportunities to connect and collaborate.</p>
         <h3>Contact Information</h3>
-        <p>Office: Room 313, Bergeron Centre for Engineering Excellence<br />
-        11 Arboretum Lane, North York, ON M3N 3A7, Canada<br />
+        <p>Office: Room 313, Bergeron Centre for Engineering Excellence<br>
+        11 Arboretum Lane, North York, ON M3N 3A7, Canada<br>
         Email: <a href="mailto:mehrdadn@yorku.ca">mehrdadn@yorku.ca</a></p>
         <p>
-          <a href="cv.pdf" target="_blank">My CV is available here.</a><br />
-          <a href="https://www.linkedin.com/in/mehrdadnajafpour/" target="_blank" class="linkedin">LinkedIn Profile</a><br />
+          <a href="cv.pdf" target="_blank">My CV is available here.</a><br>
+          <a href="https://www.linkedin.com/in/mehrdadnajafpour/" target="_blank" class="linkedin">LinkedIn Profile</a><br>
           <a href="https://orcid.org/0000-0002-4513-6601" target="_blank" class="orcid">ORCID Profile</a>
         </p>
       </div>
@@ -189,19 +200,21 @@
   <section id="education">
     <h2>Education</h2>
     <div class="card">
-      <p><strong>University of Quebec in Montreal (UQAM)</strong> — Montreal, Canada<br />
-      Ph.D. Mathematics (2018–2024)<br />
-      Supervisors: Vestislav Apostolov, Frédéric Rochon<br />
+      <p><strong>University of Quebec in Montreal (UQAM)</strong> — Montreal, Canada<br>
+      Ph.D. Mathematics (2018–2024)<br>
+      Supervisors: Vestislav Apostolov, Frédéric Rochon<br>
       <a href="phd.pdf" target="_blank">Thesis</a></p>
     </div>
     <div class="card">
-      <p><strong>Amirkabir University of Technology (AUT)</strong> — Tehran, Iran<br />
-      M.Sc. Mathematics (2013–2015)<br />
-      Supervisors: Behroz Bidabad, Eaman Eftekhary<br />
+      <p><strong>Amirkabir University of Technology (AUT)</strong> — Tehran, Iran<br>
+      M.Sc. Mathematics (2013–2015)<br>
+      Supervisors: Behroz Bidabad, Eaman Eftekhary<br>
       <a href="master.pdf" target="_blank">Thesis (in Farsi)</a></p>
     </div>
     <div class="card">
-      <p><strong>Amirkabir University of Technology (AUT)</strong> — Tehran, Iran<br />B.Sc. Mathematics (2009–2013)<br />Minor: Electrical Engineering</p>
+      <p><strong>Amirkabir University of Technology (AUT)</strong> — Tehran, Iran<br>
+      B.Sc. Mathematics (2009–2013)<br>
+      Minor: Electrical Engineering</p>
     </div>
   </section>
 
@@ -230,53 +243,44 @@
     </div>
   </section>
 
-<section id="teaching">
-  <h2>Teaching and Notes</h2>
-  <div class="white-bg">
-    <h3>Instructor</h3>
-    <ul>
-      <li>General Mathematics, UQAM — Montreal, Canada (Summer 2020, Winter 2022, Winter 2023, Winter 2024) — 
-          <a href="MAT0339.pdf" target="_blank">lecture notes (in French)</a>
-      </li>
-      <li>Differential Calculus, UQAM — Montreal, Canada (Fall 2022) — 
-          <a href="MAT0343.pdf" target="_blank">lecture notes (in French)</a>
-      </li>
-      <li>Introduction to Quantitative Methods Applied to Management, UQAM — Montreal, Canada (Winter 2021, Fall 2021) — 
-          <a href="MAT1002.pdf" target="_blank">lecture notes (in French)</a>
-      </li>
-      <li>Integral Calculus, UQAM — Montreal, Canada (Fall 2019, Winter 2020) — 
-          <a href="MAT0344.pdf" target="_blank">lecture notes (in French)</a>
-      </li>
-      <li>Euclidean and Non-Euclidean Geometry, Public Teacher Training University — Tehran, Iran (Fall 2015)</li>
-      <li>Discrete Mathematics, Public Teacher Training University — Tehran, Iran (Winter 2016)</li>
-      <li>Calculus in Industrial Engineering, University of Applied Science and Technology — Tehran, Iran (Winter 2015)</li>
-      <li>Fundamentals of Business Mathematics, University of Applied Science and Technology — Tehran, Iran (Fall 2014)</li>
-    </ul>
-    <h3>Teaching Assistant</h3>
-    <ul>
-      <li>University of Quebec in Montreal (UQAM) — Montreal, Canada: Differential Calculus, Integral Calculus, Calculus I, Linear Algebra and Vector Geometry, Analysis II, Differential Geometry, Introduction to Quantitative Methods Applied to Management, Statistical Methods (2018–2024)</li>
-      <li>Amirkabir University of Technology (AUT) — Tehran, Iran: Calculus I, II, III, Ordinary Differential Equations, Partial Differential Equations, Engineering Mathematics, Fundamentals of Matrices and Linear Algebra, Algebra I, II, Mathematical Analysis, Local Differential Geometry, Geometry of Manifolds I (Smooth Manifolds), Number Theory, Problem-Solving Strategies (2011–2015)</li>
-    </ul>
-  </div>
-</section>
-
+  <section id="teaching">
+    <h2>Teaching and Notes</h2>
+    <div class="white-bg">
+      <h3>Instructor</h3>
+      <ul>
+        <li>General Mathematics, UQAM — Montreal, Canada (Summer 2020, Winter 2022, Winter 2023, Winter 2024) — 
+            <a href="MAT0339.pdf" target="_blank">lecture notes (in French)</a></li>
+        <li>Differential Calculus, UQAM — Montreal, Canada (Fall 2022) — 
+            <a href="MAT0343.pdf" target="_blank">lecture notes (in French)</a></li>
+        <li>Introduction to Quantitative Methods Applied to Management, UQAM — Montreal, Canada (Winter 2021, Fall 2021) — 
+            <a href="MAT1002.pdf" target="_blank">lecture notes (in French)</a></li>
+        <li>Integral Calculus, UQAM — Montreal, Canada (Fall 2019, Winter 2020) — 
+            <a href="MAT0344.pdf" target="_blank">lecture notes (in French)</a></li>
+        <li>Euclidean and Non-Euclidean Geometry, Public Teacher Training University — Tehran, Iran (Fall 2015)</li>
+        <li>Discrete Mathematics, Public Teacher Training University — Tehran, Iran (Winter 2016)</li>
+        <li>Calculus in Industrial Engineering, University of Applied Science and Technology — Tehran, Iran (Winter 2015)</li>
+        <li>Fundamentals of Business Mathematics, University of Applied Science and Technology — Tehran, Iran (Fall 2014)</li>
+      </ul>
+      <h3>Teaching Assistant</h3>
+      <ul>
+        <li>University of Quebec in Montreal (UQAM) — Montreal, Canada: Differential Calculus, Integral Calculus, Calculus I, Linear Algebra and Vector Geometry, Analysis II, Differential Geometry, Introduction to Quantitative Methods Applied to Management, Statistical Methods (2018–2024)</li>
+        <li>Amirkabir University of Technology (AUT) — Tehran, Iran: Calculus I, II, III, Ordinary Differential Equations, Partial Differential Equations, Engineering Mathematics, Fundamentals of Matrices and Linear Algebra, Algebra I, II, Mathematical Analysis, Local Differential Geometry, Geometry of Manifolds I (Smooth Manifolds), Number Theory, Problem-Solving Strategies (2011–2015)</li>
+      </ul>
+    </div>
+  </section>
 
   <section id="usefullinks">
     <h2>Useful Links</h2>
     <div class="white-bg">
       <h3>Math & Science News / Stories</h3>
-      <p><strong>ScienceDaily – Mathematics News</strong> — <a href="https://www.sciencedaily.com/news/computers_math/mathematics/" target="_blank">https://www.sciencedaily.com/news/computers_math/mathematics/</a><br>
-      Latest research news and breakthroughs in mathematics and computation.</p>
-      <p><strong>Quanta Magazine</strong> — <a href="https://www.quantamagazine.org/" target="_blank">https://www.quantamagazine.org/</a><br>
-      In-depth articles explaining cutting-edge math and science discoveries.</p>
+      <p><strong>ScienceDaily – Mathematics News</strong> — <a href="https://www.sciencedaily.com/news/computers_math/mathematics/" target="_blank">https://www.sciencedaily.com/news/computers_math/mathematics/</a></p>
+      <p><strong>Quanta Magazine</strong> — <a href="https://www.quantamagazine.org/" target="_blank">https://www.quantamagazine.org/</a></p>
 
       <h3>AI / ML / Statistics / Geometry</h3>
-      <p><strong>Geometric Deep Learning</strong> — <a href="https://geometricdeeplearning.com/" target="_blank">https://geometricdeeplearning.com/</a><br>
-      Hub for research on neural networks for graphs, manifolds, and geometric data.</p>
+      <p><strong>Geometric Deep Learning</strong> — <a href="https://geometricdeeplearning.com/" target="_blank">https://geometricdeeplearning.com/</a></p>
 
       <h3>Educational Resource</h3>
-      <p><strong>John Knill’s Math Pages</strong> — <a href="https://people.math.harvard.edu/~knill/" target="_blank">https://people.math.harvard.edu/~knill/</a><br>
-      Personal collection of lectures, puzzles, and explorations in mathematics.</p>
+      <p><strong>John Knill’s Math Pages</strong> — <a href="https://people.math.harvard.edu/~knill/" target="_blank">https://people.math.harvard.edu/~knill/</a></p>
 
       <h3>Daily / Theorem-Focused Mathematics</h3>
       <p><strong>Theorem of the Day</strong> — <a href="https://www.theoremoftheday.org/" target="_blank">https://www.theoremoftheday.org/</a></p>
@@ -289,7 +293,7 @@
       <p><strong>IMC — International Mathematics Competition for University Students</strong> — <a href="https://www.imc-math.org.uk/" target="_blank">https://www.imc-math.org.uk/</a></p>
     </div>
   </section>
-  
+
   <section id="books">
     <h2>My Favorite Books</h2>
     <p>Will be added. (December 2025)</p>
