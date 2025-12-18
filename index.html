@@ -4,98 +4,146 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mehrdad Najafpour</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 0 15px;
-      line-height: 1.6;
-      color: #111;
-      background-color: #fff;
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    max-width: 1200px; /* wider content */
+    margin: 20px auto;
+    padding: 0 15px;
+    line-height: 1.6;
+    color: #111;
+    background-color: #fff;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: nowrap; /* try to keep all tabs in one line */
+    overflow-x: auto;  /* scroll if it overflows */
+    gap: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+  nav::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  nav::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 3px;
+  }
+
+  nav a {
+    flex: 0 0 auto; /* prevent shrinking */
+    white-space: nowrap;
+    text-decoration: none;
+    color: #0366d6;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+  }
+
+  nav a:hover {
+    background-color: #f0f0f0;
+  }
+
+  h1, h2 {
+    font-weight: 500;
+  }
+
+  h3 {
+    margin-top: 25px;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  section {
+    display: none;
+    margin-bottom: 40px;
+  }
+
+  section.active {
+    display: block;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .home img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    align-self: center;
+  }
+
+  .card, .white-bg {
+    border-left: 3px solid #0366d6;
+    padding: 12px 16px;
+    margin: 15px 0;
+    background-color: #fff;
+  }
+
+  .pub-list li {
+    margin-bottom: 10px;
+  }
+
+  footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+  }
+
+  .home p a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+
+  .home p a:hover {
+    text-decoration: underline;
+  }
+
+  .linkedin, .orcid {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .linkedin img, .orcid img {
+    width: 30px;
+    vertical-align: middle;
+  }
+
+  @media (min-width: 768px) {
+    .home {
+      flex-direction: row;
     }
+    .home > div {
+      flex: 1;
+    }
+  }
+
+  /* Mobile adjustments */
+  @media (max-width: 767px) {
     nav {
-      margin-bottom: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+      flex-wrap: nowrap;
+      gap: 8px;
     }
     nav a {
-      text-decoration: none;
-      color: #0366d6;
-      cursor: pointer;
-      padding: 5px 10px;
-      border-radius: 4px;
-    }
-    nav a:hover {
-      background-color: #f0f0f0;
-    }
-    h1, h2 {
-      font-weight: 500;
-    }
-    h3 {
-      margin-top: 25px;
-      font-family: "Georgia", "Times New Roman", serif;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-    }
-    section {
-      display: none;
-      margin-bottom: 40px;
-    }
-    section.active {
-      display: block;
+      padding: 6px 10px;
+      font-size: 0.85rem;
     }
     .home {
-      display: flex;
       flex-direction: column;
-      gap: 20px;
     }
-    .home img {
-      max-width: 300px;
-      height: auto;
-      border-radius: 8px;
-      align-self: center;
-    }
-    .card, .white-bg {
-      border-left: 3px solid #0366d6;
-      padding: 12px 16px;
-      margin: 15px 0;
-      background-color: #fff;
-    }
-    .pub-list li {
-      margin-bottom: 10px;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #555;
-      text-align: center;
-    }
-    .home p a {
-      color: #0366d6;
-      text-decoration: none;
-    }
-    .home p a:hover {
-      text-decoration: underline;
-    }
-    .linkedin, .orcid {
-      display: inline-block;
-      margin-top: 10px;
-    }
-    .linkedin img, .orcid img {
-      width: 30px;
-      vertical-align: middle;
-    }
-    @media (min-width: 768px) {
-      .home {
-        flex-direction: row;
-      }
-      .home > div {
-        flex: 1;
-      }
-    }
-  </style>
+  }
+</style>
+
 </head>
 <body>
 
