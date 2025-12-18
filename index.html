@@ -79,11 +79,11 @@
     .home p a:hover {
       text-decoration: underline;
     }
-    .linkedin {
+    .linkedin, .orcid {
       display: inline-block;
       margin-top: 10px;
     }
-    .linkedin img {
+    .linkedin img, .orcid img {
       width: 30px;
       vertical-align: middle;
     }
@@ -105,9 +105,10 @@
       <a href="#home" onclick="showSection('home'); return false;">Home</a>
       <a href="#education" onclick="showSection('education'); return false;">Education</a>
       <a href="#research" onclick="showSection('research'); return false;">Research & Projects</a>
-      <a href="#teaching" onclick="showSection('teaching'); return false;">Teaching</a>
-          <a href="#teaching" onclick="showSection('usefullinks'); return false;">Useful Links</a>
+      <a href="#teaching" onclick="showSection('teaching'); return false;">Teaching and Notes</a>
+      <a href="#usefullinks" onclick="showSection('usefullinks'); return false;">Useful Links</a>
       <a href="#books" onclick="showSection('books'); return false;">My Favorite Books</a>
+      <a href="#lecturenotes" onclick="showSection('lecturenotes'); return false;">My Favorite Lecture Notes</a>
       <a href="#hobbies" onclick="showSection('hobbies'); return false;">Hobbies</a>
   </nav>
 
@@ -115,13 +116,20 @@
     <div class="home">
       <div>
         <h2>Who am I?</h2>
-  <p>My name is Mehrdad Najapfour (مهرداد نجف‌پور). I am currently a Postdoctoral Researcher at the <a href="https://lab-ha.eecs.yorku.ca/" target="_blank">Laboratory of Advanced Biotechnologies for Health Assessment (LAB-HA)</a> within the Department of Electrical Engineering and Computer Science, Lassonde School of Engineering, York University, Toronto, Canada, under the supervision of Dr. <a href="https://lassonde.yorku.ca/users/rsalahandish" target="_blank">Neda Salahandish</a>.</p> <p>I obtained my Ph.D. degree in 2024 from the Université du Québec à Montréal (UQAM), Canada, under the supervision of <a href="http://profmath.uqam.ca/~apostolo/" target="_blank">Dr. Vestislav Apostolov</a> and <a href="http://profmath.uqam.ca/~rochon/" target="_blank">Dr. Frédéric Rochon</a>. My mathematical genealogy can be found here: <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=332341" target="_blank">Mathematics Genealogy Project</a>.</p> <p>My research spans Geometric Deep Learning, Geometric Analysis, Partial Differential Equations, Applied Statistics, Statistical Learning, and Mathematical Biology. As an AI/ML Algorithm and Statistical Modeling Expert, I develop principled methods that bridge theoretical insight with real-world applications.</p> <p>I am passionate about teaching from a rigorous mathematical perspective and take pride in helping others appreciate the discipline’s intrinsic beauty. This enthusiasm complements my strong dedication to research, with the goal of leading innovative projects at the intersection of mathematical theory, artificial intelligence, and practical implementation.</p> <p>Beyond mathematics and AI, I am an amateur reader of history and literature.</p> <p>I welcome opportunities to connect and collaborate.</p> <h3>Contact Information</h3>
+        <p>My name is Mehrdad Najapfour (مهرداد نجف‌پور). I am currently a Postdoctoral Researcher at the <a href="https://lab-ha.eecs.yorku.ca/" target="_blank">Laboratory of Advanced Biotechnologies for Health Assessment (LAB-HA)</a> within the Department of Electrical Engineering and Computer Science, Lassonde School of Engineering, York University, Toronto, Canada, under the supervision of Dr. <a href="https://lassonde.yorku.ca/users/rsalahandish" target="_blank">Neda Salahandish</a>.</p>
+        <p>I obtained my Ph.D. degree in 2024 from the Université du Québec à Montréal (UQAM), Canada, under the supervision of <a href="http://profmath.uqam.ca/~apostolo/" target="_blank">Dr. Vestislav Apostolov</a> and <a href="http://profmath.uqam.ca/~rochon/" target="_blank">Dr. Frédéric Rochon</a>. My mathematical genealogy can be found here: <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=332341" target="_blank">Mathematics Genealogy Project</a>.</p>
+        <p>My research spans Geometric Deep Learning, Geometric Analysis, Partial Differential Equations, Applied Statistics, Statistical Learning, and Mathematical Biology. As an AI/ML Algorithm and Statistical Modeling Expert, I develop principled methods that bridge theoretical insight with real-world applications.</p>
+        <p>I am passionate about teaching from a rigorous mathematical perspective and take pride in helping others appreciate the discipline’s intrinsic beauty. This enthusiasm complements my strong dedication to research, with the goal of leading innovative projects at the intersection of mathematical theory, artificial intelligence, and practical implementation.</p>
+        <p>Beyond mathematics and AI, I am an amateur reader of history and literature.</p>
+        <p>I welcome opportunities to connect and collaborate.</p>
+        <h3>Contact Information</h3>
         <p>Office: Room 313, Bergeron Centre for Engineering Excellence<br />
         11 Arboretum Lane, North York, ON M3N 3A7, Canada<br />
         Email: <a href="mailto:mehrdadn@yorku.ca">mehrdadn@yorku.ca</a></p>
         <p>
           <a href="cv.pdf" target="_blank">My CV is available here.</a><br />
-          <a href="https://www.linkedin.com/in/mehrdadnajafpour/" target="_blank" class="linkedin">LinkedIn Profile</a>
+          <a href="https://www.linkedin.com/in/mehrdadnajafpour/" target="_blank" class="linkedin">LinkedIn Profile</a><br />
+          <a href="https://orcid.org/0000-0002-4513-6601" target="_blank" class="orcid">ORCID Profile</a>
         </p>
       </div>
       <div>
@@ -133,10 +141,16 @@
   <section id="education">
     <h2>Education</h2>
     <div class="card">
-      <p><strong>University of Quebec in Montreal (UQAM)</strong> — Montreal, Canada<br />Ph.D. Mathematics (2018–2024)<br />Supervisors: Vestislav Apostolov, Frédéric Rochon</p>
+      <p><strong>University of Quebec in Montreal (UQAM)</strong> — Montreal, Canada<br />
+      Ph.D. Mathematics (2018–2024)<br />
+      Supervisors: Vestislav Apostolov, Frédéric Rochon<br />
+      <a href="phd.pdf" target="_blank">Thesis</a></p>
     </div>
     <div class="card">
-      <p><strong>Amirkabir University of Technology (AUT)</strong> — Tehran, Iran<br />M.Sc. Mathematics (2013–2015)<br />Supervisors: Behroz Bidabad, Eaman Eftekhary</p>
+      <p><strong>Amirkabir University of Technology (AUT)</strong> — Tehran, Iran<br />
+      M.Sc. Mathematics (2013–2015)<br />
+      Supervisors: Behroz Bidabad, Eaman Eftekhary<br />
+      <a href="master.pdf" target="_blank">Thesis</a></p>
     </div>
     <div class="card">
       <p><strong>Amirkabir University of Technology (AUT)</strong> — Tehran, Iran<br />B.Sc. Mathematics (2009–2013)<br />Minor: Electrical Engineering</p>
@@ -169,7 +183,7 @@
   </section>
 
   <section id="teaching">
-    <h2>Teaching</h2>
+    <h2>Teaching and Notes</h2>
     <div class="white-bg">
       <h3>Instructor</h3>
       <ul>
@@ -190,7 +204,7 @@
     </div>
   </section>
 
-<section id="usefullinks">
+  <section id="usefullinks">
     <h2>Useful Links</h2>
     <div class="white-bg">
       <h3>Math & Science News / Stories</h3>
@@ -221,6 +235,11 @@
   
   <section id="books">
     <h2>My Favorite Books</h2>
+    <p>Will be added. (December 2025)</p>
+  </section>
+
+  <section id="lecturenotes">
+    <h2>My Favorite Lecture Notes</h2>
     <p>Will be added. (December 2025)</p>
   </section>
 
